@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "botFont";
+    src: url(tools/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "BN";
+    src: url(tools/fontes/BebasNeue-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor0:#ebe5c5;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao: 'Arial', Verdana,Helvetica, sans-serif;
+    --fonte-destaque: 'BN', sans-serif;
+    --fonte-android: 'botFont', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    color: #333;
+    text-align: justify;
+}
+header{
+    min-height: 150px;
+    padding-top: 40px;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom,rgb(92, 179, 131),#196E3F,rgb(29, 63, 44),rgb(6, 61, 30));
+}
+header>h1{
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: #000000a6 1px 1px 2px;
+}
+header>p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin: bottom 20px;
+}
+.headerL{
+    text-align: center;
+    font: normal  400 'Bebas Neue', cursive;
+
+}
+nav{
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+    padding: 10px;
+}
+nav>a{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(48, 173, 104);
+    margin: 10px;
+
+}
+nav>a:hover{
+    color: rgb(19, 94, 53);
+    background-color: rgb(48, 173, 104);
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+main{
+    color: var(--cor5);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    outline: 0px;
+    text-indent: 30px;
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#titulo{
+    color: rgb(6, 61, 30);
+    font: normal bold 1.8em var(--fonte-android);
+    text-indent: 0px;
+
+}
+.sub-titulo{
+    color: rgb(6, 61, 30);
+    font: normal bold 1.5em var(--fonte-android);
+    text-indent: 8px;
+    background-image: linear-gradient(to right,var(--cor1),transparent);
+
+}
+strong{
+    color: rgb(6, 61, 30);
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+}
+
+.links{
+    color: rgb(6, 61, 30);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+
+}
+.links::after{
+    content: "\01F517";
+}
+.links:hover{
+    color: #196E3F;
+    text-decoration: underline;
+    margin: auto;
+}
+picture{
+    margin: auto;
+    display: block;
+}
+div.video{
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside>h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin:-10px -10px 0px -10px ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+    footer{
+       text-align: center;
+       background-color: var(--cor5);
+       color: white;
+       font-size: 0.8em;
+       padding: 5px;
+    }
+    footer >p>a{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    footer>a:hover{
+        text-decoration: underline;
+        color: var(--cor3);
+    }
+    footer>strong{
+        color: white;
+    }
+    ul{
+        list-style-type: '\2714\0020\0020';
+        columns: 2;
+        list-style-position: inside ;
+    }
+    .paragrafos{
+        display: inline-block;
+        text-align: left;
+        text-indent: 0px;
+        margin: 16px 110px 5px 0px;
+    }
+    .imagens{
+        text-align: center;
+        width: 100%;
+    }
+    .Lp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
