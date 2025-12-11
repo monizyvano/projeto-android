@@ -59,7 +59,7 @@ header>p{
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
-    margin: bottom 20px;
+    padding-bottom: 20px;
 }
 .headerL{
     text-align: center;
@@ -137,7 +137,13 @@ a{
     text-decoration: underline;
     margin: auto;
 }
-picture{
+main img{
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+.pequena{
+    width: 50%;
     margin: auto;
     display: block;
 }
@@ -201,10 +207,7 @@ aside>h3{
         text-indent: 0px;
         margin: 16px 110px 5px 0px;
     }
-    .imagens{
-        text-align: center;
-        width: 100%;
-    }
+    
     .Lp{
         margin-top: 10px;
         margin-bottom: 10px;
